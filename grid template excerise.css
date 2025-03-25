@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      'nav nav nav'
+      'header header header'
+      'sidebar content content'
+      'aside1 aside2 aside3 '
+      'footer footer footer'
+     ;
+     grid-template-rows: 50px 200px 1fr 200px;
+     grid-template-columns: 1fr 1fr 1fr;
+}
+ 
+ #nav,
+ #header,
+ #sidebar,
+ #main,
+ #aside1,
+ #aside2,
+ #aside3,
+ #footer
+ {
+    
+    padding: 20px;
+    border: 1px solid wheat;
+ }
+    
+#nav{
+    grid-area: nav;
+    background-color: blueviolet;
+}
+
+ #header{
+    grid-area: header;
+    background-color: chocolate;
+ }
+
+ #sidebar{
+    grid-area: sidebar;
+    background-color: chartreuse;
+ }
+
+ #main{
+    grid-area: content;
+    background-color: darkmagenta;
+ }
+
+ #aside1{
+    grid-area: aside1;
+    background-color: fuchsia;
+ }
+#aside2{
+    grid-area: aside2;
+    background-color:greenyellow;
+}
+#aside3{
+    grid-area: aside3;
+    background-color:aqua;
+}
+ #footer{
+    grid-area: footer;
+    background-color: navy;
+ }
